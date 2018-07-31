@@ -18,9 +18,9 @@ cd 02_ReactFrontend
 
 ## Assumptions
 
-#Backend
-Java 8 (JDK or JRE).
-PostgreSQL installed (althought can be easily replaced by in-memory db or other DB)
+# Backend
+	Java 8 (JDK or JRE).
+	PostgreSQL installed (althought can be easily replaced by in-memory db or other DB)
 
 # Frontend
 npm is installed (https://www.npmjs.com)
