@@ -1,5 +1,5 @@
 # SpringReactBookLibrary
-Demo of Integration of Application with Spring Boot Backend and React.js Frontend
+Demo of Integration of Application with Spring Boot (Java) Backend and React.js (TypeScript) Frontend 
 
 # Run the Backend
 	cd 01_SpringBootBackend
