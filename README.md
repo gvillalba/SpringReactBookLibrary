@@ -2,8 +2,8 @@
 Demo of Integration of Application with Spring Boot Backend and React.js Frontend
 
 # Run the Backend
-cd 01_SpringBootBackend
-mvn spring-boot:run
+	cd 01_SpringBootBackend
+	mvn spring-boot:run
 
 # Run the Frontend
 
