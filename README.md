@@ -7,7 +7,7 @@ Demo of Integration of Application with Spring Boot Backend and React.js Fronten
 
 # Run the Frontend
 
-cd 02_ReactFrontend
+	cd 02_ReactFrontend
 
 	# Install Node Dependencies (The first time)
 	npm install
