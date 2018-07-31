@@ -1,0 +1,78 @@
+//{
+//  "compilerOptions": {
+//    "baseUrl": ".",
+//    "outDir": "build/dist",
+//    "module": "esnext",
+//    "target": "es5",
+//    "lib": ["es6", "dom"],
+//    "sourceMap": true,
+//    "allowJs": true,
+//    "jsx": "react",
+//    "moduleResolution": "node",
+//    "rootDir": "src",
+//    "forceConsistentCasingInFileNames": true,
+//    "noImplicitReturns": true,
+//    "noImplicitThis": true,
+//    "noImplicitAny": true,
+//    "strictNullChecks": true,
+//    "suppressImplicitAnyIndexErrors": true,
+//    "noUnusedLocals": true
+//  },
+//  "exclude": [
+//    "node_modules",
+//    "build",
+//    "scripts",
+//    "acceptance-tests",
+//    "webpack",
+//    "jest",
+//    "src/setupTests.ts"
+//  ]
+//}
+{
+  "compilerOptions": {
+    "outDir": "build/dist",
+    "module": "commonjs",
+    "target": "es5",
+    "lib": ["es6", "dom"],
+    "sourceMap": true,
+    "allowJs": true,
+    "jsx": "react",
+    "moduleResolution": "node",
+    "rootDir": "src",
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": false,
+    "strictNullChecks": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedLocals": false,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
+  },
+  "exclude": [
+    "node_modules",
+    "build",
+    "scripts",
+    "acceptance-tests",
+    "webpack",
+    "jest",
+    "src/setupTests.ts"
+  ]
+}
+//
+//{
+//  "compilerOptions": {
+//    "target": "es6",
+//    "module": "commonjs",
+//    "moduleResolution": "node",
+//    "noResolve": false,
+//    "noImplicitAny": false,
+//    "removeComments": true,
+//    "sourceMap": true,
+//    "allowJs": true,
+//    "jsx": "react"
+//  },
+//  "exclude": [
+//    "./node_modules/**/*"
+//  ]
+//}

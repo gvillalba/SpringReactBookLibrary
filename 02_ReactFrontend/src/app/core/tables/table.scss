@@ -1,0 +1,102 @@
+@import "../../theme.scss";
+
+.table-template {
+  .ReactVirtualized__Table__headerRow {
+    background-color: $table-header-background;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-transform: none;
+    vertical-align: middle;
+    text-align: center;
+  }
+
+  .ReactVirtualized__Table__row {
+    border-bottom-style: solid;
+    border-bottom-color: $table-alternate-row-color;
+    border-bottom-width: thin;
+    outline: none;
+  }
+
+  .ReactVirtualized__Table__rowColumn {
+    word-wrap: break-word;
+    text-align: center;
+    text-overflow: clip;
+    white-space: pre-wrap;
+    margin: 5px;
+  }
+
+  .ReactVirtualized__Table__headerColumn {
+    word-break: break-all;
+    text-align: center;
+  }
+
+  .ReactVirtualized__Table__Grid {
+    outline: none
+  }
+
+  #drl-checkbox {
+    background-color: $table-grey-color;
+  }
+
+  .no-alerts {
+    margin-left: 10px;
+    font-size: 32px;
+    padding: 0;
+    color: $table-grey-color;
+  }
+
+  .table-row-grey {
+    .ReactVirtualized__Table__row {
+      background: $table-alternate-row-color;
+    }
+  }
+
+  .record-count{
+    padding-top: 10px;
+    border-top-color: $table-alternate-row-color ;
+    border-top-style: solid;
+    border-top-width: thin;
+  }
+
+  .btn {
+    padding:0 20px 0 0;
+    color: $btn-primary-bg;
+    font-size: 17px;
+    outline: none;
+  }
+  .alert-icon {
+    .btn {
+      font-size: 32px;
+      padding: 0;
+      left: 10px;
+      .new-alert {
+        color: $table-alert-red-color;
+      }
+      .no-new-alert {
+        color: $table-grey-color;
+      }
+    }
+
+    .alert-badge {
+      position: absolute;
+      left: 28px;
+      z-index: 10;
+    }
+
+    .badge.alert-badge {
+      min-width: 25px;
+    }
+  }
+
+  @media screen and (max-width: $screen-sm-min) {
+    .ReactVirtualized__Table__rowColumn {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+  }
+}
+

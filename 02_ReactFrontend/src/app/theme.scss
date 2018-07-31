@@ -1,0 +1,101 @@
+@import "../bootstrap/stylesheets/bootstrap/_variables.scss";
+
+$light-colors: (
+  'accent': #5FC6CF,
+  'accent-muted': #F1F9FA,
+  'accent-secondary': #0090C5,
+  'primary': #2C5697,
+  'primary-bold': #10384F,
+  'primary-foreground': #FFFFFF,
+  'primary-foreground-muted': #B4C5D5,
+  'primary-foreground-transparent': rgba(255,255,255,0.8),
+  'background': #F8F8F8,
+  'background-dark': #E6E7E8,
+  'background-secondary': #FFFFFF,
+  'background-secondary-foreground': #000000,
+  'neutral': #A9ADAE,
+  'neutral-secondary': #9B9B9B,
+  'alert': #ED1C24,
+  'alert-secondary': #B00016,
+  'warning': #FFD208
+);
+
+@function theme-colors($key: 'primary') {
+  @return map-get($light-colors, $key);
+}
+
+$body-bg: theme-colors('background');
+
+$font-family-base: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-default-color: theme-colors('background-secondary-foreground');
+
+$navbar-default-bg: theme-colors('primary');
+$navbar-default-color: theme-colors('primary-foreground');
+$navbar-default-link-color: theme-colors('primary-foreground-muted');
+$navbar-default-link-hover-color: theme-colors('primary-foreground');
+$navbar-default-link-active-bg: theme-colors('primary');
+$navbar-default-link-active-color: theme-colors('primary-foreground');
+$navbar-default-brand-color: theme-colors('primary-foreground');
+$navbar-default-brand-hover-color: theme-colors('primary-foreground');
+$navbar-border-radius: 0;
+$navbar-margin-bottom: 0;
+
+$navbar-inverse-bg: theme-colors('background-secondary');
+$navbar-inverse-color: theme-colors('background-secondary-foreground');
+$navbar-inverse-link-color: theme-colors('background-secondary-foreground');
+$navbar-inverse-link-hover-color: theme-colors('background-secondary-foreground');
+$navbar-inverse-link-active-bg: theme-colors('background-secondary');
+$navbar-inverse-link-active-color: theme-colors('background-secondary-foreground');
+
+$panel-bg: theme-colors('background-secondary');
+$panel-default-heading-bg: theme-colors('background-secondary');
+$panel-border-radius: 0;
+
+$dropdown-link-active-color: theme-colors('background-secondary-foreground');
+$dropdown-link-active-bg: theme-colors('background-secondary');
+
+$btn-default-color: #5FC6CF;
+$btn-default-bg: #FFFFFF;
+$btn-default-border: #5FC6CF;
+
+$btn-primary-color: #FFFFFF;
+$btn-primary-bg: #5FC6CF;
+$btn-primary-border: #5FC6CF;
+
+$table-alternate-row-color: theme-colors('background-dark');
+$table-bg-accent: $table-alternate-row-color;
+
+$table-grey-color: #B2B6B7;
+$table-alert-red-color: #ED1C24;
+$table-header-background: theme-colors('primary-foreground-muted');
+
+$drl-textarea-background: theme-colors('background-dark');
+
+@mixin default-vertical-spacing {
+  margin-bottom: 10px;
+}
+
+@mixin row-spacing() {
+  .row {
+    @include default-vertical-spacing();
+  }
+}
+
+@mixin pull-right() {
+  float: right !important;
+}
+
+
+.btn.btn-lg {
+  padding: 2px 12px;
+}
+
+.btn.btn-sm {
+  padding: 2px 12px;
+}
+
+.container-fluid {
+  .row {
+    margin: 0;
+  }
+}

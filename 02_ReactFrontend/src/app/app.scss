@@ -1,0 +1,18 @@
+@import "theme.scss";
+
+.panel-default {
+  .panel-heading {
+    border-color: theme-colors('accent');
+    border-left: 3px solid theme-colors('accent');
+  }
+
+  .panel-title {
+    font-size: $font-size-large;
+    font-weight: bold;
+  }
+}
+
+/** IMPORTANT: Bootstrap overrides and imports must be above these lines **/
+$icon-font-path: '../bootstrap/fonts/bootstrap/';
+@import "../bootstrap/stylesheets/_bootstrap.scss";
+
