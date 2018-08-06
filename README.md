@@ -48,7 +48,8 @@ Demo of Integration of Application with Spring Boot (Java) Backend and React.js 
 	1. 'entities': Maps persistent entities from/to the database.
 	2. 'repositories': Provides the definition of the operations that access the database.
 	
-	Note: For the purposes of this demo, the data from the database is deleted and re-created when the applications starts. 
+	*Note: 
+	For the purposes of this demo, the data from the database is deleted and re-created when the applications starts. 
 	The data can be queried directly on the database.
 	Some books are created so that they are available on the restful API and the frontend can show them.
 	
@@ -138,6 +139,7 @@ Demo of Integration of Application with Spring Boot (Java) Backend and React.js 
 	]
 
 ## get books by filter (Not fully implemented, returns all books)
+	POST localhost:9090/books/filter
 ## create book (backend only) 
 ## get subjects
 ## create subject
