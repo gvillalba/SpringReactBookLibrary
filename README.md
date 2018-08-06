@@ -15,12 +15,12 @@ Demo of Integration of Application with Spring Boot (Java) Backend and React.js 
 	# Run
 	npm start
 
+# Dependencies
 
-## Assumptions
-
-# Backend
+## Backend
 	Java 8 (JDK or JRE).
+	Maven
 	PostgreSQL installed (althought can be easily replaced by in-memory db or other DB)
 
-# Frontend
+## Frontend
 npm is installed (https://www.npmjs.com)
