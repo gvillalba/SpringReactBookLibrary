@@ -35,7 +35,7 @@ Demo of Integration of Application with Spring Boot (Java) Backend and React.js 
 	There are two main packages the 'api' and the 'dal'.
 	
 	The 'api' package (com.german.library.mylibrary.api) is composed by 3 subpackages:
-	1. 'controller': exposes the restul API.
+	1. 'controller': exposes the restful API.
 	2. 'Model': Should contain business related classes that are NOT entities (from database). 
 	3. 'service': It is used to implement the services exposed by the 'api' package. This package is 
 	the only one that get access to the data access layer (DAL).
