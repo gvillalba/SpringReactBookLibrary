@@ -1,11 +1,11 @@
 # SpringReactBookLibrary
 Demo of Integration of Application with Spring Boot (Java) Backend and React.js (TypeScript) Frontend 
 
-# Run the Backend
+## Run the Backend
 	cd 01_SpringBootBackend
 	mvn spring-boot:run
 
-# Run the Frontend
+## Run the Frontend
 
 	cd 02_ReactFrontend
 
