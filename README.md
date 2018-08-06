@@ -56,7 +56,13 @@ Demo of Integration of Application with Spring Boot (Java) Backend and React.js 
 	The available services on the API are detailed in the "Use Cases" section.
 
 ## Frontend Architecture
-
+	The frontend application was built with React.js and TypeScript.
+	Some additional components has been used and managed by npm.
+	The dependencies are installed running 'npm install' on the command line inside the '02_ReactFrontend' folder.
+	
+	The UI application URL is the following:
+	
+	http://localhost:3000/
 	
 # Use Cases
 	This application implements a limited set of use cases for a Book Library. 
