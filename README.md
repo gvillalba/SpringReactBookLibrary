@@ -70,6 +70,40 @@ Demo of Integration of Application with Spring Boot (Java) Backend and React.js 
 	
 	Returns the list of all the books available in the database.
 	
+	e.g.
+	[
+	    {
+		"id": 1,
+		"name": "Spring Boot Essentials",
+		"authorFirstName": "Josh",
+		"authorLastName": "Long",
+		"yearOfPublication": 2017,
+		"publisher": "Springer",
+		"bookUid": "Springer001",
+		"edition": "First Edition",
+		"subject": {
+		    "id": 1,
+		    "subjectUid": "is001",
+		    "description": "Computer Science"
+		}
+	    },
+	    {
+		"id": 2,
+		"name": "Learning Spring Boot 2.0",
+		"authorFirstName": "Greg",
+		"authorLastName": "Turnquist",
+		"yearOfPublication": 2017,
+		"publisher": "Packt",
+		"bookUid": "Packt001",
+		"edition": "First Edition",
+		"subject": {
+		    "id": 1,
+		    "subjectUid": "is001",
+		    "description": "Computer Science"
+		}
+	    }, ...
+
+	
 ## get books by year
 	GET localhost:9090/books/year/{year}
 	
