@@ -23,4 +23,4 @@ Demo of Integration of Application with Spring Boot (Java) Backend and React.js 
 	PostgreSQL installed (althought can be easily replaced by in-memory db or other DB)
 
 ## Frontend
-npm is installed (https://www.npmjs.com)
+	npm is installed (https://www.npmjs.com)
