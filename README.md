@@ -68,8 +68,12 @@ Demo of Integration of Application with Spring Boot (Java) Backend and React.js 
 ## get books
 	GET localhost:9090/books
 	
+	Returns the list of all the books available in the database.
+	
 ## get books by year
 	GET localhost:9090/books/year/{year}
+	
+	Returns the list of books available in the database filtered by a given year of publication.
 	
 	e.g. localhost:9090/books/year/2016
 	returns:
@@ -140,6 +144,87 @@ Demo of Integration of Application with Spring Boot (Java) Backend and React.js 
 
 ## get books by filter (Not fully implemented, returns all books)
 	POST localhost:9090/books/filter
+	
 ## create book (backend only) 
+	POST localhost:9090/books
+	
+	Creates a new Book. (not implemented in the frontend, but can be used directly with applications such as POSTMAN).
+	
+	e.g. body:
+	
+	{
+	    "name": "My New Book",
+	    "authorFirstName": "Andrew",
+	    "authorLastName": "Green",
+	    "yearOfPublication": 2016,
+	    "publisher": "Packt",
+	    "bookUid": "Packt004",
+	    "edition": "First Edition",
+	    "subject": {
+		"id": 1,
+		"subjectUid": "is001",
+		"description": "Computer Science"
+	    }
+	}
+	
+	e.g. returns (persisted book object):
+	
+	{
+	    "id": 16,
+	    "name": "My New Book",
+	    "authorFirstName": "Andrew",
+	    "authorLastName": "Green",
+	    "yearOfPublication": 2016,
+	    "publisher": "Packt",
+	    "bookUid": "Packt004",
+	    "edition": "First Edition",
+	    "subject": {
+		"id": 1,
+		"subjectUid": "is001",
+		"description": "Computer Science"
+    		}
+	}
+
 ## get subjects
+	GET localhost:9090/subjects
+	
+	Returns the list of book subjects.
+	
+	e.g.:
+	[
+	    {
+		"id": 1,
+		"subjectUid": "is001",
+		"description": "Computer Science"
+	    },
+	    {
+		"id": 2,
+		"subjectUid": "is002",
+		"description": "Business"
+	    },
+	    {
+		"id": 3,
+		"subjectUid": "is003",
+		"description": "Economy"
+	    }
+	]
+	
 ## create subject
+	POST localhost:9090/subjects
+	
+	Creates a new book subject.
+	
+	e.g. body:
+	
+	{
+	    "subjectUid": "is004",
+	    "description": "New Book Subject"
+	}
+	
+	e.g. returns (persisted subject object):
+	{
+	    "id": 4,
+	    "subjectUid": "is004",
+	    "description": "New Book Subject"
+	}
+	
