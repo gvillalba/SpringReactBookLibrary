@@ -47,6 +47,12 @@ Demo of Integration of Application with Spring Boot (Java) Backend and React.js 
 	It is composed by two packages:
 	1. 'entities': Maps persistent entities from/to the database.
 	2. 'repositories': Provides the definition of the operations that access the database.
+	
+	Note: For the purposes of this demo, the data from the database is deleted and re-created when the applications starts. 
+	The data can be queried directly on the database.
+	Some books are created so that they are available on the restful API and the frontend can show them.
+	
+	The available services on the API are the following:
 
 ## Frontend Architecture
 
@@ -59,7 +65,58 @@ Demo of Integration of Application with Spring Boot (Java) Backend and React.js 
 	using React.js with TypeScript.
 	
 ## get books
+	GET localhost:9090/books
 ## get books by year
+	GET localhost:9090/books/year/{year}
+	e.g. localhost:9090/books/year/2016
+	returns:
+	[
+    {
+        "id": 5,
+        "name": "Mastering React",
+        "authorFirstName": "Adam",
+        "authorLastName": "Horton",
+        "yearOfPublication": 2016,
+        "publisher": "Packt",
+        "bookUid": "Packt004",
+        "edition": "First Edition",
+        "subject": {
+            "id": 1,
+            "subjectUid": "is001",
+            "description": "Computer Science"
+        }
+    },
+    {
+        "id": 9,
+        "name": "React: Up & Running: Building Web Applications",
+        "authorFirstName": "Stoyan",
+        "authorLastName": "Stefanov",
+        "yearOfPublication": 2016,
+        "publisher": "O'Reilly",
+        "bookUid": "Packt008",
+        "edition": "First Edition",
+        "subject": {
+            "id": 1,
+            "subjectUid": "is001",
+            "description": "Computer Science"
+        }
+    },
+    {
+        "id": 14,
+        "name": "A taste of Sucessful Business Practices",
+        "authorFirstName": "Jim",
+        "authorLastName": "Pennypacker",
+        "yearOfPublication": 2016,
+        "publisher": "Business Publisher",
+        "bookUid": "Busi001",
+        "edition": "First Edition",
+        "subject": {
+            "id": 2,
+            "subjectUid": "is002",
+            "description": "Business"
+        }
+    }
+]
 ## get years from books
 ## get books by filter (Not fully implemented, returns all books)
 ## create book (backend only) 
