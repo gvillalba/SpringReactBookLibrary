@@ -52,7 +52,7 @@ Demo of Integration of Application with Spring Boot (Java) Backend and React.js 
 	The data can be queried directly on the database.
 	Some books are created so that they are available on the restful API and the frontend can show them.
 	
-	The available services on the API are the following:
+	The available services on the API are detailed in the "Use Cases" section.
 
 ## Frontend Architecture
 
@@ -66,8 +66,10 @@ Demo of Integration of Application with Spring Boot (Java) Backend and React.js 
 	
 ## get books
 	GET localhost:9090/books
+	
 ## get books by year
 	GET localhost:9090/books/year/{year}
+	
 	e.g. localhost:9090/books/year/2016
 	returns:
 	[
@@ -118,6 +120,23 @@ Demo of Integration of Application with Spring Boot (Java) Backend and React.js 
     }
 ]
 ## get years from books
+	GET localhost:9090/books/years
+	
+	Returns the list of years from which there are available books on the database published that year.
+	
+	e.g.:
+	[
+	    2000,
+	    2001,
+	    2002,
+	    2003,
+	    2004,
+	    2015,
+	    2016,
+	    2017,
+	    2018
+	]
+
 ## get books by filter (Not fully implemented, returns all books)
 ## create book (backend only) 
 ## get subjects
