@@ -38,7 +38,7 @@ Demo of Integration of Application with Spring Boot (Java) Backend and React.js 
 	1. 'controller': exposes the restful API.
 	2. 'Model': Should contain business related classes that are NOT entities (from database). 
 	3. 'service': It is used to implement the services exposed by the 'api' package. This package is 
-	the only one that get access to the data access layer (DAL).
+	the only one that gets access to the data access layer (DAL).
 	
 	The 'dal' package (com.german.library.mylibrary.dal) is the implementation of the data access layer (DAL).
 	The DAL uses the 'repository' pattern from Spring Data JPA. That is, the boiler plate code, such as common 
