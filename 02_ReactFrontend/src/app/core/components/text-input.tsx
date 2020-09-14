@@ -35,7 +35,7 @@ export class TextInput extends React.Component<TextInputProps> {
                     value={value}
                     disabled={disabled}
                     readOnly={readOnly}
-                    componentClass={componentClass}
+                    // componentClass={componentClass}
                 />
                 {this.renderTrailingFieldLabel()}
             </div>
